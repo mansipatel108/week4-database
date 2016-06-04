@@ -1,4 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="week4.Site" %>
+
 <%@ Register Src="~/User_Controls/Navbar.ascx" TagName="Navbar" TagPrefix="bs3" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,12 +18,16 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <bs3:Navbar runat="server" ID="PrimaryNav"></bs3:Navbar>
-    <div>
-        <asp:ContentPlaceHolder ID="MainContent" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
+        <bs3:Navbar runat="server" ID="PrimaryNav"></bs3:Navbar>
+        <div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer class="footer navbar navbar-fixed-bottom bg-info">
+            <div class="container">
+                <p class="text-muted">&copy; 2016 Contoso University</p>
+            </div>
+        </footer>
     </form>
 
     <!-- JavaScript -->
