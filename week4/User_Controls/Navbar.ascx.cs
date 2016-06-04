@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 /**
- * @author: Tom Tsiliopoulos
+ * @author: Mansi Patel
  * @date: May 26, 2016
  * @version: 0.0.1 - added SetActivePage method
  */
@@ -34,6 +34,15 @@ namespace week4
             {
                 case "Home Page":
                     home.Attributes.Add("class", "active");
+                    break;
+                case "Students":
+                    students.Attributes.Add("class", "active");
+                    break;
+                case "Courses":
+                    courses.Attributes.Add("class", "active");
+                    break;
+                case "Departments":
+                    departments.Attributes.Add("class", "active");
                     break;
                 case "Contact":
                     contact.Attributes.Add("class", "active");
